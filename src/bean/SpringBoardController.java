@@ -18,6 +18,8 @@ public class SpringBoardController {
 		System.out.println("controller inputR");
 		ModelAndView mv = new ModelAndView();
 		
+		mv.setViewName("input_result"); 
+		
 		return mv;
 	}
 }

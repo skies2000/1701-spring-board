@@ -25,7 +25,7 @@ function init(){
 	
 	if(btninputR != null){
 		btninputR.onclick = function(){
-			frmB.action =url+'inputR.do';
+			frmB.action = url + 'inputR.do'; 
 			frmB.submit();
 			
 		}

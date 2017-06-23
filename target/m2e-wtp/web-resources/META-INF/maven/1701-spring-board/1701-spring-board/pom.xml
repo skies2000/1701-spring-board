@@ -84,6 +84,15 @@
 <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
 
 	
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+	<!--에러 생겨서 추가  -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-config</artifactId>
+    <version>4.0.4.RELEASE</version>
+</dependency>
+	
     
 </dependencies>
   

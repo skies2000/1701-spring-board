@@ -6,8 +6,8 @@ import myba.BoardFactor;
 
 public class BoardDao {
 	SqlSession session;
-	public BoardDao(){
-		this.session = BoardFactor .getFactory().openSession();
+	public BoardDao(BoardFactor f){
+		this.session = f.getFactory().openSession();
 		
 	}
 	

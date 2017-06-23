@@ -18,6 +18,7 @@
 	<bean id='factory' class='myba.BoardFactor'/>
 	
 	<bean id='dao' class='bean.BoardDao'>
+	<constructor-arg ref='factory'></constructor-arg>
 	</bean>
 	
 	<bean id='ctrl' class='bean.SpringBoardController'>
@@ -27,12 +28,12 @@
 	
 	<mvc:view-resolvers>
 	<!--JSP를 이용해서 컨트롤러의 실행 결과를 보여주기 위한 설정  -->
-		<mvc:jsp prefix="board/"/>
+		<mvc:jsp prefix="/board/"/>
 		<mvc:jsp suffix=".jsp"/>
 		<!--결과물이 표시되어야 할 경로가 /hello/라는 곳이다  -->
 	</mvc:view-resolvers>
 	
 	 <!-- mybatis Factory  -->
-	 <bean id='factory' class='myba.BoardFactory'/>
+	 
 
 </beans>
