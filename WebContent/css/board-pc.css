@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+@IMPORT url("gen.css");
+
+#top{
+	
+	background-color:#ffaaaa;
+	border:1px solid #ff4444;
+	padding:20px;
+	box-sizing:board-box;
+	text-align : center;
+	
+}
