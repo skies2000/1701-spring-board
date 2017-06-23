@@ -22,7 +22,7 @@ String inc = "./board/list.jsp";
 if(request.getParameter("inc") != null) {
    inc = request.getParameter("inc");
 }
-%> 
+%>  
 
    <div id='main'>
       <div id='top'>

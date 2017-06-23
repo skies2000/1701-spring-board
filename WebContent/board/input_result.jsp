@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h2>질문 결과</h2>
+저장 결과 : ${msg}
+
+<form name='frm_board' method='post'>
+	<input type='button' id='btnList' value='목록으로'>
+</form>
 
 </body>
 </html>

@@ -15,6 +15,14 @@
 	    하기 위한 설정 -->
 	<mvc:default-servlet-handler /> 
 	<!--처리된 결과를 누구에게 전달을 할것인가.. 결과물들의 표시 페이지	 -->
+	<bean id='factory' class='myba.BoardFactor'/>
+	
+	<bean id='dao' class='bean.BoardDao'>
+	</bean>
+	
+	<bean id='ctrl' class='bean.SpringBoardController'>
+	<constructor-arg ref='dao'/> 
+	</bean>
 	
 	
 	<mvc:view-resolvers>

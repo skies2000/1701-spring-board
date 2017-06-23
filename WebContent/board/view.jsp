@@ -8,8 +8,6 @@
 </head>
 <body>
 <%
-request.setCharacterEncoding("utf-8");
-response.setContentType("text/html;charset=utf-8");
 String str = request.getParameter("listVal");
 out.print(str);
 %>

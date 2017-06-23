@@ -9,7 +9,7 @@ function init(){
 	var frmB = document.frm_board;
 	var btninput = getId('btninput');
 	var btninputR = getId('btninputR');
-	var btnlist = getId('btnlist');
+	var btnlist = getId('btnList');
 	
 	
 	
@@ -25,7 +25,7 @@ function init(){
 	
 	if(btninputR != null){
 		btninputR.onclick = function(){
-			frmB.action = url + 'input_result.jsp';
+			frmB.action =url+'inputR.do';
 			frmB.submit();
 			
 		}
