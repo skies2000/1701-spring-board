@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script src="js/file_upload.js"></script>
 </head>
 <body>
 <h2>Q&A 작성하기</h2>
@@ -14,10 +15,12 @@
 	<label>제목</label>
 	<input type='text' name='subject'>
 	<p/>
+	<div id=fileatt></div>
 	<input type='button' id='btninputR' value='저장하기'>
 	<input type='button' id='btnlist' value='목록으로'>
 </form>
 
+<script>attFileAppend();</script>
 
 </body>
 </html>

@@ -4,6 +4,22 @@
 
 <mapper namespace="board">
 	<!-- <resultMap type="bean.BoardVo" id="boardMap"/> -->
+	<insert id='brd_insert' parameterType='bean.BoardVo'>
+	insert all<!--insert를 한번에 여러개를 할수 있다.  -->
 	
+		into board(serial, mdate, worker, usbject, content, hit,grp, deep) 
+		values(seq.board_serial.nextval, sysdate, #{worker}, #{content}, 
+		0,seq.board_serial.currval, seq.board_serial.curval)
+		<if test="attfile !=null">
+			<foreach collection="attfile" item='data'>
+				into board_att(serial, pserial, attfile)
+				values(seq_board_att_serial.nextval, seq_board_serial.currval, #{data})
+			</foreach>
+		</if>
+		
+	
+	select * from dual<!--insert all 할때 마지막에 이 문장이 반듯이 있어야 한다.  -->  
+	
+	</insert>
 	
 </mapper>
