@@ -28,7 +28,7 @@ function init(){
 			frmB.submit();
 			
 		}
-	}
+	} 
 	
 	if(btnlist != null){
 		btnlist.onclick = function(){

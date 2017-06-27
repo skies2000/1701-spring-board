@@ -15,6 +15,8 @@
 	<label>제목</label>
 	<input type='text' name='subject'>
 	<p/>
+	<textarea rows="10" cols="30" name='content'></textarea>
+	
 	<div id=fileatt></div>
 	<input type='button' id='btninputR' value='저장하기'>
 	<input type='button' id='btnlist' value='목록으로'>

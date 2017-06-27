@@ -9,6 +9,7 @@ public class BoardVo {
 	private String mDate;
 	private String worker;
 	private String content;
+	private String subject;
 	private int hit;
 	private int grp;
 	private String deep;
@@ -18,6 +19,13 @@ public class BoardVo {
 	private int startNo;
 	private int endNo;
 	private String findStr;
+	
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
 	public int getSerial() {
 		return serial;
 	}

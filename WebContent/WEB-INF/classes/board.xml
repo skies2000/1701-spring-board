@@ -7,11 +7,11 @@
 	<insert id='brd_insert' parameterType='bean.BoardVo'>
 	insert all<!--insert를 한번에 여러개를 할수 있다.  -->
 	
-		into board(serial, mdate, worker, usbject, content, hit,grp, deep) 
-		values(seq.board_serial.nextval, sysdate, #{worker}, #{content}, 
-		0,seq.board_serial.currval, seq.board_serial.curval)
+		into board(serial, mdate, worker, subject, content, hit,grp, deep) 
+		values(seq_board_serial.nextval, sysdate, #{worker}, #{subject},#{content}, 
+		0,seq_board_serial.currval, seq_board_serial.currval)
 		<if test="attfile !=null">
-			<foreach collection="attfile" item='data'>
+			<foreach collection="attfile" item="data">
 				into board_att(serial, pserial, attfile)
 				values(seq_board_att_serial.nextval, seq_board_serial.currval, #{data})
 			</foreach>

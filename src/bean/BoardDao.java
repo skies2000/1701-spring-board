@@ -22,6 +22,7 @@ public class BoardDao {
 			else	msg="저장중 오류 발생";
 					
 		} catch (Exception e) {
+			e.printStackTrace();
 			msg = "시스템 오류~~~~";
 			session.rollback();
 		}finally{
