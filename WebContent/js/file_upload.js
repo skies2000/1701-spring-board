@@ -7,8 +7,8 @@ function attFileAppend(ev){
 
 	var tags = document.getElementsByClassName('fileName');
 	var yn = true;
-	
-	for(var t = 0; t<tags.length-1 ; t++){
+	alert(tags.length);
+	for(var t = 0; t<tags.length ; t++){
 		if(tags[t].value == ''){
 			var br = tags[t].nextElementSibling;
 			var img = tags[t].previousElementSibling;

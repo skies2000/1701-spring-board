@@ -21,8 +21,8 @@ public class SpringBoardController {
 		this.dao = dao;
 	}
 	
-	@SuppressWarnings("finally")
-	@RequestMapping(value="board/inputR.do", method={RequestMethod.POST})
+	
+	@RequestMapping(value="inputR.do", method={RequestMethod.POST})
 	public Object inputR(BoardVo vo, HttpServletRequest req){
 		System.out.println("controller inputR");
 		ModelAndView mv = new ModelAndView();

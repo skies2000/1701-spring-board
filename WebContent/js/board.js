@@ -18,14 +18,14 @@ function init(){
 	
 	if(btninput != null){
 		btninput.onclick = function(){
-			frmB.action = url + 'input.jsp';
+			frmB.action = 'input.do';
 			frmB.submit();
 		}
 	}
 	
 	if(btninputR != null){
 		btninputR.onclick = function(){
-			frmB.action = url + 'inputR.do'; 
+			frmB.action = 'inputR.do'; 
 			frmB.submit();
 			
 		}
@@ -33,7 +33,7 @@ function init(){
 	
 	if(btnlist != null){
 		btnlist.onclick = function(){
-			frmB.action = url + 'list.jsp';
+			frmB.action = 'list.jsp';
 			frmB.submit();
 			
 		}
@@ -45,7 +45,7 @@ function Go(value){
 	 
 	ff.listVal.value = value;
 	
-	ff.action = url+'view.jsp'
+	ff.action = 'view.jsp'
 	
 	ff.submit();
 }
