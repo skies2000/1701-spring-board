@@ -12,8 +12,7 @@ function init(){
 	var btnlist = getId('btnList');
 	
 	
-	
-	
+	 
 	
 	
 	if(btninput != null){
@@ -21,7 +20,7 @@ function init(){
 			frmB.action = 'input.do';
 			frmB.submit();
 		}
-	}
+	} 
 	
 	if(btninputR != null){
 		btninputR.onclick = function(){
@@ -33,7 +32,7 @@ function init(){
 	
 	if(btnlist != null){
 		btnlist.onclick = function(){
-			frmB.action = 'list.jsp';
+			frmB.action = 'list.do';
 			frmB.submit();
 			
 		}

@@ -21,8 +21,31 @@ public class SpringBoardController {
 		this.dao = dao;
 	}
 	
+	@RequestMapping(value="input.do", method={RequestMethod.POST,RequestMethod.POST })
+	public Object input(BoardVo vo, HttpServletRequest req){
+		System.out.println("controller input....");
+		ModelAndView mv = new ModelAndView();
+			
+			mv.setViewName("input");
+			return mv;
+		 
+	}
+	@RequestMapping(value="list.do", method={RequestMethod.POST,RequestMethod.POST})
+	public Object list(BoardVo vo, HttpServletRequest req){
+		System.out.println("controller list....");
+		ModelAndView mv = new ModelAndView();
+			
+			mv.setViewName("list");
+			return mv;
+		 
+	}
 	
-	@RequestMapping(value="inputR.do", method={RequestMethod.POST})
+	
+	
+	
+	
+	@SuppressWarnings("finally")
+	@RequestMapping(value="inputR.do", method={RequestMethod.POST,RequestMethod.POST})
 	public Object inputR(BoardVo vo, HttpServletRequest req){
 		System.out.println("controller inputR");
 		ModelAndView mv = new ModelAndView();

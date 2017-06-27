@@ -16,7 +16,7 @@
 <input type='button' id='btninput' value='작성' >
 <input type='hidden' name='listVal'>
 <input type='hidden' name='test' value='112233'>
-<div>
+<div> 
 <a href=# onclick="Go('안녕하세요~~1')" >안녕하세요~~1</a>
 </div> 
 <div>

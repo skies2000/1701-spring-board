@@ -7,7 +7,6 @@ function attFileAppend(ev){
 
 	var tags = document.getElementsByClassName('fileName');
 	var yn = true;
-	alert(tags.length);
 	for(var t = 0; t<tags.length ; t++){
 		if(tags[t].value == ''){
 			var br = tags[t].nextElementSibling;
@@ -18,7 +17,7 @@ function attFileAppend(ev){
 			tags[t].parentNode.removeChild(tags[t]);
 			yn = false;
 		} 
-	}
+	} 
 	
 	if(yn){
 	cnt++;
@@ -43,7 +42,7 @@ function attFileAppend(ev){
 	div.appendChild(img);
 	div.appendChild(file);
 	div.appendChild(br);
-	
+	 
 	var event = ev || window.event;
 	if(event ==null) return;
 	

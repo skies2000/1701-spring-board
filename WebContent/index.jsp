@@ -28,7 +28,7 @@ if(request.getParameter("inc") != null) {
       <div id='top'>
          <%@include file="top.jsp"%>
       </div>
-      
+       
       <div id='center'>
          <jsp:include page="<%=inc %>"/>
       </div>
